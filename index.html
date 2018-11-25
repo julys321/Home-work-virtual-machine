@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VirtualMachine</title>
+  </head>
+  <body>
+    <script src="FileIO.js"></script>
+    <script src="VirtualMachine.js"></script>
+    <script src="main.js"></script>
+    <div>
+      <h3>Provide file with the binary program for execution</h3>
+      <input type="file" id="programFile" name="programFile" onchange='openBinFile(event)'>
+    </div>
+    <div>
+      <h3>Provide the encrypted txt file</h3>
+      <input type="file" id="encryptedFile" name="encryptedFile" onchange='openTextFile(event)'>
+    </div>
+    <div>
+
+      <button onclick="main()">Execute</button>
+    </div>
+  </body>
+</html>
