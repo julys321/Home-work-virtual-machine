@@ -72,7 +72,7 @@ class VirtualMachine {
                         this.programCounter++;
                     break;
                 case 0x0B:
-                    console.log("Not Implemented RET")
+                    console.log("End of program")
                     this.programCounter++;
                     break;
                 case 0x0C:
@@ -180,7 +180,6 @@ class VirtualMachine {
     }
 
     outputRegister(adress){
-        console.log(this.registers[adress],String.fromCharCode(this.registers[adress]))
         this.output +=  String.fromCharCode(this.registers[adress]);
     }
 
